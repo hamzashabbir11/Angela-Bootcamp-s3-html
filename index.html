@@ -5,68 +5,80 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Can's Portfolio</title>
 <style>
-
-
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #120131, #0a001c); /* This creates a blue gradient background */
+    background: linear-gradient(to right, #120131, #0a001c);
     color: white;
     margin: 0;
     display: flex;
-    justify-content: flex-start; /* Align items to the top */
-    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start;
+    flex-direction: column;
     height: 100vh;
 }
-    .container {
-        max-width: 600px;
-        width: 100%;
-        padding: 2rem;
-        text-align: left;
-        padding-left: 4rem;
-    }
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Align items to both ends */
+    align-items: center;
+    padding: 1rem;
+}
 
-    .logo {
-        width: 50px;
-        height: 50px;
-        background-color: white;
-        border-radius: 50%;
-        display: inline-block;
-        margin-right: 10px;
-    }
-    .navbar a {
-        color: white;
-        text-decoration: none;
-        align-items: right;
-        text-align: right;
-    }
-    .navbar a:hover {
-        color: #ddd;
-    }
-    .greeting {
-        font-size: 2em;
-        margin-bottom: 0.3em;
-    }
-    .wave-emoji {
-        font-size: 2.5em;
-    }
-    .introduction {
-        font-size: 1.5em;
-        margin-bottom: 1em;
-    }
-    .expertise {
-        color: #ddd;
-        font-size: 1.1em;
-        margin-bottom: 2em;
-    }
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+    text-align: left;
+    padding-left: 4rem;
+}
+
+.greeting {
+    font-size: 2em;
+    margin-bottom: 0.3em;
+}
+
+.wave-emoji {
+    font-size: 2.5em;
+}
+
+.introduction {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.expertise {
+    color: #ddd;
+    font-size: 1.1em;
+    margin-bottom: 2em;
+}
 </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="logo.jpeg" alt="Logo" width="50" height="50">
-        </div>  
-        <a href="#home">Home</a>
-        <a href="#blog">Blog</a>
+            <img src="logo.png" alt="Logo" width="50" height="50">
+        </div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
 
     <div class="container">
@@ -75,6 +87,7 @@ body {
         <div class="expertise">
             I'm an engineer focusing on Backend Development and System Design and Solution Architecture.
             I'm providing freelance Cloud solutions to my clients. 
+        </div>
     </div>
 </body>
 </html>
