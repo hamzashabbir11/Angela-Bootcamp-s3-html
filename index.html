@@ -9,17 +9,13 @@ body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to right, #120131, #0a001c);
     color: white;
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
     height: 100vh;
 }
 .navbar {
     display: flex;
-    justify-content: space-between; /* Align items to both ends */
-    align-items: center;
+    justify-content: space-between;
     padding: 1rem;
+    flex-direction: row;
 }
 
 .logo {
@@ -48,11 +44,13 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 1300px;
     width: 100%;
     padding: 2rem;
     text-align: left;
-    padding-left: 4rem;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .greeting {
@@ -142,15 +140,18 @@ body {
         </div>
     </nav>
     <div class="container">
-        <div class="greeting">Hi, I'm Hamza. <span class="wave-emoji">👋</span></div>
-        <div class="introduction">I'm a Software Engineer 🤖</div>
-        <div class="expertise">
-            I'm an engineer focusing on Backend Development, System Design and Solution Architecture.
-            I'm providing freelance Cloud solutions to my clients. Feel free to reach out to me for any queries.            
+        <div>
+            <div class="greeting">Hi, I'm Hamza. <span class="wave-emoji">👋</span></div>
+            <div class="introduction">I'm a Software Engineer 🤖</div>
+            <div class="expertise">
+                I'm an engineer focusing on Backend Development, System Design and Solution Architecture.
+                I'm providing freelance Cloud solutions to my clients. Feel free to reach out to me for any queries.            
+            </div>
         </div>
-        <!-- <div class="illustartion">
+
+        <div class="illustartion">
             <img src="programmer.svg" alt="Illustartion" width="400" height="400">
-        </div> -->
+        </div>
     </div>
 </body>
 </html>
